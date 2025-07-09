@@ -95,7 +95,7 @@ export default function Hero() {
   if (!heroData) return null;
 
   const featuredArticle = heroData[0];
-  const secondaryArticles = heroData.slice(1);
+  // const secondaryArticles = heroData.slice(1);
 
   const slug = featuredArticle.title
     .toLowerCase()
@@ -131,10 +131,11 @@ export default function Hero() {
                 {featuredArticle.title}
               </h1>
               <div className="relative overflow-hidden">
-                <Image
+                <img
                   src={featuredArticle.images[0] || "/placeholder.svg"}
                   alt={featuredArticle.title}
                   height={600}
+                  
                   className="object-cover w-screen lg:w-full mx-auto h-[400px] transition-transform duration-300"
                 />
               </div>

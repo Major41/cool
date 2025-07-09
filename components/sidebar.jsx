@@ -30,9 +30,10 @@ export default function Sidebar() {
           key={article.id}
           className="flex gap-4 bg-white rounded-lg shadow-sm p-4 border border-gray-100 hover:shadow-md transition"
         >
-          <Image
+          <img
             src={article.images?.[0] || "/placeholder.svg"}
             alt={article.title}
+            fill
             className="w-20 h-20 object-cover rounded-md"
           />
           <div className="flex-1">

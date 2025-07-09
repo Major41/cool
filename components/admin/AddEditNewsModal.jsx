@@ -266,9 +266,10 @@ export function AddEditNewsModal({ isOpen, onClose, article }) {
                 {previews.length > 0 && (
                   <div className="mt-3 flex gap-3 flex-wrap">
                     {previews.map((src, idx) => (
-                      <Image
+                      <img
                         key={idx}
                         src={src}
+                        
                         className="w-20 h-20 object-cover rounded border"
                         alt="Preview"
                       />
